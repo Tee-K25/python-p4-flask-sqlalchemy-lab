@@ -9,6 +9,8 @@ from models import db, Zookeeper, Animal, Enclosure
 
 fake = Faker()
 
+# db.init_app(app)
+
 with app.app_context():
 
     Animal.query.delete()
